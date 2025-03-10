@@ -43,16 +43,63 @@ const myFunction = function(){  //function
 
 
 // we use typeof function to find the type of datatype used 
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof outsideTemp);
-console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof bigNumber);
-console.log(typeof heroes);
-console.log(typeof myObj);
-console.log(typeof myFunction);
+// console.log(typeof score);
+// console.log(typeof scoreValue);
+// console.log(typeof isLoggedIn);
+// console.log(typeof outsideTemp);
+// console.log(typeof userEmail);
+// console.log(typeof id);
+// console.log(typeof bigNumber);
+// console.log(typeof heroes);
+// console.log(typeof myObj);
+// console.log(typeof myFunction);
+
+
+
+
+
+
+
+//*****************************************************************************/
+                                  /*MEMORY*/
+
+//Primitive DataTypes are stored in STACK Memory.
+//It uses the concept of call by value where CHANGES are made in the COPY of the variables.
+
+//EXAMPLE
+let userName = "ravikumar";
+let anotherName = userName;
+
+anotherName = "badassravikumar"  //changes made to it will not affect the value of userName as earlier the COPY of value of userName was passed to anotherName.
+
+// console.log(userName);
+// console.log(anotherName);
+
+
+
+
+//Non Primitive DataTypes uses HEAP Memory.
+//It uses the concept of call by reference where CHANGES are made in the reference of the variables i.e the ACTUAL VALUES are changed.
+
+//EXAMPLE
+
+let userOne = {
+    email: "ravi@google.com",
+    upi: "ravi@ybl"
+}
+
+let userTwo = userOne  //REFERENCE of value is passed here from HEAP memory to the variable userTwo which is present in STACK memory.
+
+console.log(userTwo.email);
+
+
+userTwo.email = "badass@yahoo.com" //CHANGE made here will also reflect in the email of userOne as REFERENCE was passed earlier.
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
 
 
 
