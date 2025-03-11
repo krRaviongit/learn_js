@@ -25,7 +25,8 @@
 			"settings": {
 				"editor.fontSize": 22,
 				"terminal.integrated.fontSize": 20,
-				"editor.wordWrap": "on"
+				"editor.wordWrap": "on",
+				"workbench.colorTheme": "Coder Coder Dark Theme"
 			}
 			
 		}
