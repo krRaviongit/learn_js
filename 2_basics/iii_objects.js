@@ -28,7 +28,7 @@ const JsUser = {
 
 JsUser.email = "ravi@chatgpt.com"  //email changed that is value is overriden
 // Object.freeze(JsUser)  //freeze doesnt allow to change the value of the object
-JsUser.email = "ravi@microsoft.com"  
+JsUser.email = "ravi@microsoft.com"  // this email will not show bcz freeze function is used
 // console.log(JsUser);
 
 JsUser.greeting = function(){
